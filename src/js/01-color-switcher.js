@@ -9,6 +9,8 @@ const bgColorBody = document.querySelector('body');
 stopBtn.setAttribute('disabled', 'disabled');
 startBtn.addEventListener('click', onStartClick);
 
+let timerId = null;
+
 function onStartClick() {
   startBtn.setAttribute('disabled', 'disabled');
   stopBtn.removeAttribute('disabled');
